@@ -160,7 +160,7 @@ def getResponse(msg):
     elif context == "feedback":
         context = ""
         return sendFeedback(msg)
-    elif isQuestion>.8 and mutatedIn(msg,["vegan","veg","non-veg","nonveg","egg","eggless","organic"])>.7:
+    elif isQuestion>.8 and mutatedIn(msg,["vegan","veg","non-veg","nonveg","egg","eggless","organic","vegetarian"])>.7:
         context = ""
         return "All our cakes our 100% organic and vegetarian. Even though we don't use eggs, we assure you that our cakes are delicious and fulfilling. Our dairy is taken from the finest cows across the globe"
     elif isQuestion>.7 and mutatedIn(msg,["refund","return"])>.7:
