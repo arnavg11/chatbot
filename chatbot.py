@@ -101,10 +101,10 @@ def mutatedIn(msg,comparators):
     return bestMatchScore
 context = "first"
 promotion = ""
-outlets = ["chennai", "bangalore", "delhi", "lucknow", "mumbai", "chandigarh"]
+outlets = ["chennai", "bangalore", "delhi", "lucknow", "mumbai", "chandigarh","toronto","montreal","vancouver","moscow","kazan","omsk","tokyo","kyoto","osaka"]
 foreignOutletDict = {"india":"Chennai, Bangalore, Delhi, Lucknow, Mumbai and Chandigarh",
                      "canda":"Toronto, Montreal and Vancouver",
-                     "russia": "Moscow, Kazan, Omsk and St. Petersburgh",
+                     "russia": "Moscow, Kazan and Omsk",
                      "japan": "Tokyo, Kyoto and Osaka"}
 
 def processOrder(msg):
