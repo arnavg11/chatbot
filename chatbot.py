@@ -160,7 +160,9 @@ def getResponse(msg):
     elif context == "feedback":
         context = ""
         return sendFeedback(msg)
-
+    elif isQuestion>.8 and mutatedIn(msg,["vegan","veg","non-veg","nonveg","egg","eggless","organic"])>.7:
+        context = ""
+        return "All our cakes our 100% organic and vegetarian. Even though we don't use eggs, we assure you that our cakes are delicious and fulfilling. Our dairy is taken from the finest cows across the globe"
     elif isQuestion>.7 and mutatedIn(msg,["refund","return"])>.7:
         context = ""
         return "You can read our return policies at chefscakes.com/returns"
@@ -175,9 +177,6 @@ def getResponse(msg):
     elif isQuestion>.8 and mutatedIn(msg,['tos','policy','privacy',"service","terms"])>.7:
         context = ""
         return "You can read our policies at chefscakes.com/tos"
-    elif isQuestion>.8 and mutatedIn(msg,["vegan","veg","non-veg","nonveg","egg","eggless","organic"])>.7:
-        context = ""
-        return "All our cakes our 100% organic and vegetarian. Even though we don't use eggs, we assure you that our cakes are delicious and fulfilling. Our dairy is taken from the finest cows across the globe"
     elif isQuestion>.8 and mutatedIn(msg,["outside","foreign","countries","country","offices"]):
         context = "foreign countries"
         return "We do operate in countries other than India. Kindly type below the name of our country and i shall tell you our outlets in the country"
