@@ -17,7 +17,7 @@ class Chatbot:
         self.setupMainWindow()
 
     def setupMainWindow(self):
-        self.root.title = "Ferns and Petals"
+        self.root.title = "ChefsCakes"
         self.root.resizable (height=False, width=False)
         self.root.configure(width = 470, height = 550, bg = BG_COLOR)
 
@@ -187,10 +187,13 @@ def getResponse(msg):
 
 
 def getInitResponse():
-    starters = ["Hello I am Abbot how may I serve you today?"]
-    offers = ["Could I possibly interest you in our newest product yet: the Sugary Birthday"]
+    starters = ["Hello I am Abbot how may I serve you today?",
+                "Hi I am Abbot. Feel free to talk to me about any queries."]
+    offers = ["Could I possibly interest you in our newest product yet: the Sugary Birthday",
+              "Make your loved one's taste buds ecstatic with the taste of our 'All Cream No Bread Cake'",
+              "Psst. Here, take this 35% discount on the chocozilla cake to please the hearts of your taste buds and wallets"]
     promotion = choice(offers)
-    return "Abbot: "+choice(starters)+"(if you have some feedback or complaint to give us simply type feedback or comment in the box below)\n"+promotion+"\n\n"
+    return "Abbot: "+choice(starters)+"(if you have some feedback or complaint to give us simply type feedback or comment in the box below)\nAbbot: "+promotion+"\n\n"
 
 if __name__ == "__main__":
     app = Chatbot()
